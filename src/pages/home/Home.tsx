@@ -1,23 +1,24 @@
+import ListaPostagens from "../components/postagens/listaPostagens/ListaPostagens"
+import ModalPostagem from "../components/postagens/modalPostagem/ModalPostagem"
 
 function Home() {
     return (
         <>
             <div className="flex justify-center bg-[#8ED7E0] text-black">
-                <div className='container grid grid-cols-2 text-white'>
+            <div className='container grid grid-cols-2 text-white'>
                     <div className="flex flex-col gap-4 items-center justify-center py-4">
                         <h2 className='text-5xl font-bold'>
-                        Seja bem vinde!
+                            Seja Bem Vinde!
                         </h2>
                         <p className='text-xl'>
                             Expresse aqui seus pensamentos e opniões
                         </p>
 
                         <div className="flex justify-around gap-4">
-                            <div className='rounded text-white 
-                                            border-white border-solid border-2 py-2 px-4'
-                                >
-                                Nova Postagem
-                            </div>
+                            <div className="flex justify-around gap-4">
+                                <ModalPostagem />
+                        </div>
+
                         </div>
                     </div>
 
@@ -30,6 +31,8 @@ function Home() {
                     </div>
                 </div>
             </div>
+
+            <ListaPostagens />
         </>
     )
 }
