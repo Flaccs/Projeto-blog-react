@@ -80,7 +80,7 @@ function DeletarTema() {
         	</p>
 
             <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
-                <header className='py-2 px-6 bg-indigo-600 text-white font-bold text-2xl'>
+                <header className='py-2 px-6 bg-[#8DA8E0] text-white font-bold text-2xl'>
                     Tema
                 </header>
                 <p className='p-8 text-3xl bg-slate-200 h-full'>{tema.descricao}</p>
@@ -94,7 +94,7 @@ function DeletarTema() {
                     </button>
 
                     <button
-                        className='w-full text-slate-100 bg-indigo-400 hover:bg-indigo-600 
+                        className='w-full text-slate-100 bg-indigo-400 hover:bg-indigo-500 
                             flex items-center justify-center'
                         onClick={deletarTema}>
 
